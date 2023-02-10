@@ -1,5 +1,5 @@
 class Calculate_Lights:
-    # class variables for rows and columns to get the 2D grid array
+    # class variables for rows and columns to get the 2D light grid array
     rows = 1000
     cols = 1000
     
