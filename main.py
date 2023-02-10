@@ -5,21 +5,22 @@ class Calculate_Lights:
     
     def sum_lights_on(self, input_file):
         lights_grid = [[0 for _ in range(self.cols)] for _ in range(self.rows)]
+        # print(len(lights_grid))
         with open(input_file, "r") as f:
             for line in f:
-                parts = line.strip().split(" ")
+                details = line.strip().split(" ")
         
-                start, end = [list(map(int, x.split(","))) for x in [parts[-3], parts[-1]]]
-                if parts[0] == "turn":
-                    command = " ".join(parts[:2])
+                start, end = [list(map(int, x.split(","))) for x in [details[-3], details[-1]]]
+                if details[0] == "turn":
+                    instruction = " ".join(details[:2])
             
                     for i in range(start[0], end[0]+1):
                         for j in range(start[1], end[1]+1):
-                            if command == "turn on":
+                            if instruction == "turn on":
                                 lights_grid[i][j] = True
-                            elif command == "turn off":
+                            elif instruction == "turn off":
                                 lights_grid[i][j] = False
-                elif parts[0] == "toggle":
+                elif details[0] == "toggle":
                     for i in range(start[0], end[0]+1):
                         for j in range(start[1], end[1]+1):
                             lights_grid [i][j] = not lights_grid [i][j]
@@ -32,16 +33,16 @@ class Calculate_Lights:
         lights_grid = [[0 for _ in range(self.cols)] for _ in range(self.rows)]
         with open(input_file, "r") as f:
             for line in f:
-                parts = line.strip().split(" ")
-                start, end = [list(map(int, x.split(","))) for x in [parts[-3], parts[-1]]]
+                details = line.strip().split(" ")
+                start, end = [list(map(int, x.split(","))) for x in [details[-3], details[-1]]]
                 for i in range(start[0], end[0]+1):
                     for j in range(start[1], end[1]+1):
-                        if parts[0] == "turn" and parts[1] == "on":
+                        if details[0] == "turn" and details[1] == "on":
                             lights_grid[i][j] += 1
                             
-                        if parts[0] == "turn" and parts[1] == "off":
+                        if details[0] == "turn" and details[1] == "off":
                             lights_grid[i][j] = max(lights_grid[i][j] - 1, 0)
-                        if parts[0] == "toggle":
+                        if details[0] == "toggle":
                             lights_grid[i][j] += 2
                           
                     
