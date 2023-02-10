@@ -10,14 +10,16 @@ Finally, you can count the number of lights that are switched on in the grid and
 
 The implementation details will depend on the programming language you are using and the data structures you choose to represent the grid and the instructions.
 
+### Below are the steps required to this working on a windows system.
+ - install all required dependencies 
+ - clone the project from github repo
+ - Run entry point
 
-Installation
-pip install unittest 
-
-Usage 
-Step 1: clone the project on the github
-git clone https://github.com/Faleye-jide/LSEG_Code_Challenge.git
-Step 2: Run the entry point
-python main.py
-Step 3: Run the test file for the test cases
-python -m unittest --v
+## 1.  InstallatInstall required dependencies
+    pip install unittest 
+## 2. Clone the project on the github
+   git clone https://github.com/Faleye-jide/LSEG_Code_Challenge.git
+3. Run the entry point
+   python main.py
+4. Run the test file for the test cases
+   python -m unittest --v
