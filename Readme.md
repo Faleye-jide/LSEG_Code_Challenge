@@ -15,11 +15,11 @@ The implementation details will depend on the programming language you are using
  - clone the project from github repo
  - Run entry point
 
-## 1.  InstallatInstall required dependencies
+## 1. Install required dependencies
     pip install unittest 
 ## 2. Clone the project on the github
    git clone https://github.com/Faleye-jide/LSEG_Code_Challenge.git
-3. Run the entry point
+## 3. Run the entry point
    python main.py
-4. Run the test file for the test cases
+## 4. Run the test file for the test cases
    python -m unittest --v
