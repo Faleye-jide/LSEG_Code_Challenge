@@ -9,3 +9,15 @@ you can set all the lights in the coordinate range to on, for "turn off" instruc
 Finally, you can count the number of lights that are switched on in the grid and print the result.
 
 The implementation details will depend on the programming language you are using and the data structures you choose to represent the grid and the instructions.
+
+
+Installation
+pip install unittest 
+
+Usage 
+Step 1: clone the project on the github
+git clone https://github.com/Faleye-jide/LSEG_Code_Challenge.git
+Step 2: Run the entry point
+python main.py
+Step 3: Run the test file for the test cases
+python -m unittest --v
