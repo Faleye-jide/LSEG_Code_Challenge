@@ -8,7 +8,6 @@ you can set all the lights in the coordinate range to on, for "turn off" instruc
 
 Finally, you can count the number of lights that are switched on in the grid and print the result.
 
-The implementation details will depend on the programming language you are using and the data structures you choose to represent the grid and the instructions.
 
 ### Below are the steps required to this working on a windows system.
  - install all required dependencies 
@@ -19,6 +18,7 @@ The implementation details will depend on the programming language you are using
     pip install unittest 
 ## 2. Clone the project on the github
    git clone https://github.com/Faleye-jide/LSEG_Code_Challenge.git
+   cd LSEG_Code_Challenge
 ## 3. Run the entry point
    python main.py
 ## 4. Run the test file for the test cases
