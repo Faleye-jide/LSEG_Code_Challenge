@@ -5,7 +5,6 @@ class Calculate_Lights:
     
     def sum_lights_on(self, input_file):
         lights_grid = [[0 for _ in range(self.cols)] for _ in range(self.rows)]
-        print(len(lights_grid))
         with open(input_file, "r") as f:
             for line in f:
                 parts = line.strip().split(" ")
